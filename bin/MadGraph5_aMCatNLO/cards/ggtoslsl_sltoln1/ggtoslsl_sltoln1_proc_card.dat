@@ -1,0 +1,8 @@
+set low_mem_multicore_nlo_generation True
+
+import model MSSM_SLHA2
+
+generate a a > mul+ mul-, mul+ > mu+ n1, mul- > mu- n1
+
+output ggtoslsl_sltoln1 -nojpeg
+
