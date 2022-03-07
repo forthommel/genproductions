@@ -1,3 +1,4 @@
 set param_card mass 1000011 <<<MSL>>>
 set param_card mass 1000013 <<<MSL>>>
+set param_card mass 1000015 <<<MSL>>>
 set param_card mass 1000024 <<<MN1>>>
