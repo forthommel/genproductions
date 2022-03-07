@@ -3,4 +3,4 @@ set low_mem_multicore_nlo_generation True
 import model MSSM_SLHA2
 generate a a > <<<LEP>>>l+ <<<LEP>>>l-, <<<LEP>>>l+ > <<<LEP>>>+ n1, <<<LEP>>>l- > <<<LEP>>>- n1
 
-output ggtoslsl_sltoln1 -nojpeg
+output <<<OUTPUT>>> -nojpeg
