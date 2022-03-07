@@ -1,8 +1,10 @@
 #!/bin/bash
 
-channels=(e mu tau)
-masses_sl=(100 150 200 250 300 350)
-dmasses=(10 20 30 40 50 60)
+channels=(e mu ta) # lepton flavours considered
+masses_sl=(100 150 200 250 300 350) # slepton masses
+dmasses=(10 20 30 40 50 60) # mass differences between slepton and neutralino
+
+# template input cards location
 template=GamGamToSlSl_SlToLN1_template
 
 prefix=${template/template/}
