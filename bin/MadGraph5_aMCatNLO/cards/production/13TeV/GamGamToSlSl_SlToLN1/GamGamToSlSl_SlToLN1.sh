@@ -13,10 +13,10 @@ postfix=(customizecards.dat proc_card.dat run_card.dat)
 for msl in ${masses_sl[*]}; do
     for dm in ${dmasses[*]}; do
         for lep in ${channels[*]}; do
-            dir=${template/template/${lep}${lep}_M$msl-$dm}
-            echo "Processing masses point (m_sl=$msl, m_sl-m_n1=$dm) for $lep-channel -> $dir"
-            mkdir $dir
             mn1=$((msl-dm)) # compute the neutralino mass from masses hierarchy
+            dir=${template/template/${lep}${lep}_M$msl-$mn1}
+            echo "Processing masses point (m_sl=$msl, m_n1=$mn1 -> m_sl-m_n1=$dm) for $lep-channel -> $dir"
+            mkdir $dir
             for pf in ${postfix[*]}; do
                 sed "s/<<<MSL>>>/${msl}/g; s/<<<MN1>>>/${mn1}/g; s/<<<LEP>>>/${lep}/g; s/<<<OUTPUT>>>/${dir}/g" $template/$prefix$pf > $dir/${dir}_$pf
             done
