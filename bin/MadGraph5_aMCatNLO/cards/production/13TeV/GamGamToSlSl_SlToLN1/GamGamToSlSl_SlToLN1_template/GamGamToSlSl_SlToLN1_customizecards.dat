@@ -1,4 +1,20 @@
+# define neutralino mass
+set param_card mass 1000022 <<<MN1>>>
+set param_card mass 1000023 <<<MN1>>>
+set param_card mass 1000025 <<<MN1>>>
+set param_card mass 1000035 <<<MN1>>>
+# define sleptons masses
 set param_card mass 1000011 <<<MSL>>>
+set param_card mass 2000011 <<<MSL>>>
 set param_card mass 1000013 <<<MSL>>>
+set param_card mass 2000013 <<<MSL>>>
 set param_card mass 1000015 <<<MSL>>>
-set param_card mass 1000024 <<<MN1>>>
+set param_card mass 2000015 <<<MSL>>>
+# define decay widths
+set param_card wsl1 1.0
+set param_card wsl2 1.0
+set param_card wsl3 1.0
+# in MG5_aMC, sl{4,5,6} are for right-handed sparticles
+set param_card wsl4 1.0
+set param_card wsl5 1.0
+set param_card wsl6 1.0

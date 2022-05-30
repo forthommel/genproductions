@@ -1,6 +1,10 @@
 set low_mem_multicore_nlo_generation True
 
 import model MSSM_SLHA2
-generate a a > <<<LEP>>>l+ <<<LEP>>>l-, <<<LEP>>>l+ > <<<LEP>>>+ n1, <<<LEP>>>l- > <<<LEP>>>- n1
+define sl+ = <<<LEP>>>l+ <<<LEP>>>r+
+define sl- = <<<LEP>>>l- <<<LEP>>>r-
+#define ns = n1 n2 n3 n4
+#generate a a > sl+ sl-, sl+ > <<<LEP>>>+ ns, sl- > <<<LEP>>>- ns
+generate a a > sl+ sl-
 
 output <<<OUTPUT>>> -nojpeg
