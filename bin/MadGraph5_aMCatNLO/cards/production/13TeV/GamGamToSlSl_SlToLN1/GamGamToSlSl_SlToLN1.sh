@@ -8,7 +8,7 @@ dmasses=(10 20 30 40 50 60) # mass differences between slepton and neutralino
 template=GamGamToSlSl_SlToLN1_template
 
 prefix=${template/template/}
-postfix=(customizecards.dat proc_card.dat run_card.dat)
+postfix=(customizecards.dat proc_card.dat run_card.dat madspin_card.dat)
 
 for msl in ${masses_sl[*]}; do
     for dm in ${dmasses[*]}; do

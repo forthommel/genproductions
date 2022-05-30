@@ -1,6 +1,19 @@
-decay 1000011 > 11 1000022
-decay 1000013 > 13 1000022
-decay 1000015 > 15 1000022
-decay 2000011 > 11 1000022
-decay 2000013 > 13 1000022
-decay 2000015 > 15 1000022
+set ms_dir ./madspin2
+set Nevents_for_max_weigth 250 # number of events for the estimate of the max. weight
+set max_weight_ps_point 400 # number of PS to estimate the maximum for each event
+set max_running_process 1
+
+decay el+ > e+ n1
+decay el- > e- n1
+decay mul+ > mu+ n1
+decay mul- > mu- n1
+decay ta1+ > ta+ n1
+decay ta1- > ta- n1
+decay er+ > e+ n1
+decay er- > e- n1
+decay mur+ > mu+ n1
+decay mur- > mu- n1
+decay ta2+ > ta+ n1
+decay ta2- > ta- n1
+
+launch
